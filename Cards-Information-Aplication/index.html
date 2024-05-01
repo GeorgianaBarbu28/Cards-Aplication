@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section-container">
+            <div class="form-container"> 
+                <h2 class="form-title">What do we call you?</h2>
+                <form>
+                    <div class="form-grup">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-input email-input" type="email" name="email" />
+                        <p class="error-input">Please enter a valid email adress</p>
+                    </div>
+                    
+                    <div class="form-nameContainer">
+                        <div class="form-grup">
+                            <label class="form-label" for="first-name">First Name</label>
+                            <input  class="form-input first-name-input" type="text" name="first-name" />
+                        </div>
+            
+                        <div class="form-grup">
+                            <label class="form-label" for="last-name">Last Name</label>
+                            <input class="form-input last-name-input" type="text" name="last-name" />
+                        </div>
+                    </div>
+
+                    <div class="form-grup">
+                        <label class="form-label" for="location">📍 Location</label>
+                        <input class="form-input location-input" type="text" name="location" />
+                    </div>
+
+                    <div class="form-grup">
+                        <label class="form-label" for="phone">📞 Phone</label>
+                        <input class="form-input phone-input" type="text" name="phone" />
+                    </div>
+
+                </form>
+            </div>
+ 
+            <div class="user-card">
+                <div class="user-pozition">
+                    <img class="img" src="./poza.jpg" alt="poza-profil">
+                    <div class="text-container">
+                        <div class="user-name-container">
+                            <h6 class="first-name-user">Barbu</h6>
+                            <h6 class="last-name-user">Georgiana</h6>
+                        </div>
+                        <p class="user-email">barbugeorgiana28@gmail.com</p>
+                        <div class="user-information">
+                            <p>📍</p>
+                            <p class="user-location"> Brasov, Calea Fagarasului, nr.2</p> 
+                        </div>
+                        <div class="user-information">
+                            <p>📞</p>
+                            <p class="user-phone">  0755380255</p>
+                        </div>
+                    </div> 
+                </div>    
+        </div>
+    </div>
+    <div onclick="saveUserData()" class="buton-section">
+        <button class="buton">SAVE</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
